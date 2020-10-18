@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm sao và chòm sao</title>
+</head>
+<body>
+<script>
+    let arrStars = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arrConstellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function match(star){
+        for(let i = 0; i < arrStars.length; i++){
+            if(arrStars[i] == star){
+                return alert(`${arrStars[i]} thuoc chom sao ${arrConstellation[i]}`);
+            }
+        }
+        alert("khong co sao nao tuong ung");
+    }
+    match(prompt("nhap ten chom sao"));
+</script>
+</body>
+</html>
